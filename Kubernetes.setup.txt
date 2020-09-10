@@ -1,0 +1,13 @@
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+   Setup Includes below Installation on Ubuntu 20.04.1 LTS
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 
+Step 1# Ensure to Update the System and Install the ca-certs and other s/w
+
+sudo apt-get update
+sudo apt-install apt-transport-https ca-certificates curl software-properties-common
+
+Step 2# Remove Any Existing docker engine  to ensure that it doesnt conflicts with Kubernetes
+
+sudo apt-get remove docker docker-engine docker.io containerd runc
+
