@@ -66,3 +66,26 @@ Step 7# Verify the Docker Engine is Installed Correctly by running the hello-wor
 
 sudo docker run hello-world
 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+# https://kubernetes.io/docs/tasks/tools/install-kubectl/  ==> KUBECTL SETUP LINK
+
+Step 8# Install kubectl binary with curl command
+
+curl -LO "https://storage.googleapis.com/kubernetes-release/release/$(curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt)/bin/linux/amd64/kubectl"
+
+
+Step 9# Make the kubectl binary executable
+
+chmod +x ./kubectl
+
+Step 10# Move the binary into your PATH
+
+sudo mv ./kubectl /usr/local/bin/kubectl 
+
+Step 11#
+
+kubectl version --client 
+
+
+
