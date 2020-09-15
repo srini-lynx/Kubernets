@@ -174,3 +174,18 @@ Differnce b/w Master and worker Node:
 Master :: 1> kubeapi-server , 2>etcd, 3>scheduler, 4>controller
 
 Worker :: 1> kubelet  2> runtime (docker , rkt, CRIO )
+
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+kubectl command is used to run and manage the kubernetes cluser
+
+EX:
+
+kubectl run hello-world  ==> used to run hello-world 
+
+kubectl cluster-info     ==> used to give cluster information
+
+kubectl get nodes        ==> used to give information about the nodes
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
