@@ -148,3 +148,29 @@ Should have 5 things listed. type,host,kubelet,apiserver and kubeconfig
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
+JARGONS
++++++++
+
+Node: A node is a machine either physical/virtual on which kubernets installed, A node is a basically
+WORKER machine that's where containers are launched by kubernets, it was also known as minions in the past (node) what if the application running on the node fails ? So we need more than one node.
+
+Cluster: Basically , set of nodes group together if any one node fails the application is still accessible from other nodes.
+
+Master: Node where basically kubernetes is installed and configured, the master watches over the nodes and responisble for orchastration of the containers on the worker nodes.
+
+===========
+Components:
+===========
+1>kubelet         ==> It's the agent that runs on each of the cluster.
+2>etcd            ==> Reliable distributed key/value Store.
+3>API Server      ==> Front end service for kubernetes.
+4>Scheduler       ==> Responsible for distributing work load/containers across multiple nodes. 
+5>Controller      ==> Brain behind orchastration respnds when nodes, END point,container goes down. 
+6>Container Runtime ==> Underlaying s/w that used to run containers in this case it's docker.
+
+------------------------------------
+Differnce b/w Master and worker Node:
+-------------------------------------
+Master :: 1> kubeapi-server , 2>etcd, 3>scheduler, 4>controller
+
+Worker :: 1> kubelet  2> runtime (docker , rkt, CRIO )
