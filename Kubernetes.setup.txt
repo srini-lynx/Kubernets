@@ -96,6 +96,8 @@ Client Version: version.Info{Major:"1", Minor:"19", GitVersion:"v1.19.1", GitCom
 
 Step 11# Installing minikube
 
+Pre requiste is to have kubectl installed and also ensure Hypervisor installed, in this case we are running the minikube inside virtual box image of Ubuntu, so we have setup docker as the driver for minikube.
+
 curl -Lo minikube https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64 \
 >   && chmod +x minikube
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
