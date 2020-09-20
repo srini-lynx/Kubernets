@@ -189,3 +189,21 @@ kubectl cluster-info     ==> used to give cluster information
 kubectl get nodes        ==> used to give information about the nodes
 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+9/16/2020
+---------
+
+Setup Kubernetes
+===============
+1> minikube
+2> microK8's
+3> Kubeadm
+
+Hosted Solution for Kubernetes
+------------------------------
+
+GCP ==> Google Cloud Platform
+AWS ==> Amazon Web Services
+Azure => Microsoft
+
+
